@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nybu's Blog</title>
+</head>
+<body>
+    <script>
+    fetch('/blogs.json')
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    </script>
+</body>
+</html>
