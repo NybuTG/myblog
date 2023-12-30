@@ -6,7 +6,8 @@
 </head>
 <body>
     <script>
-    fetch('/blogs.json')
+    fetch('/myblog/blogs.json')
+        .then((response) => response.json())
         .then((json) => console.log(json));
     </script>
 </body>
